@@ -118,7 +118,6 @@
 		08F3B6E3232258BD00510CE7 /* FeedLocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F3B6D8232258BD00510CE7 /* FeedLocalizationTests.swift */; };
 		08F3B6E6232258CE00510CE7 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F3B6E5232258CE00510CE7 /* XCTestCase+MemoryLeakTracking.swift */; };
 		47E0E67B247FD09700034C56 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47E0E67D247FD09700034C56 /* Feed.storyboard */; };
-		47E0E67F247FD14000034C56 /* Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E0E67E247FD14000034C56 /* Localized.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -319,7 +318,6 @@
 		47E0E679247FB39400034C56 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Feed.strings; sourceTree = "<group>"; };
 		47E0E67A247FB39500034C56 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Feed.strings; sourceTree = "<group>"; };
 		47E0E67C247FD09700034C56 /* tr */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = tr; path = tr.lproj/Feed.storyboard; sourceTree = "<group>"; };
-		47E0E67E247FD14000034C56 /* Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localized.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -712,7 +710,6 @@
 				08F3B6412322564500510CE7 /* FeedImageViewModel.swift */,
 				08F3B6432322564500510CE7 /* FeedViewModel.swift */,
 				08F3B63E2322564500510CE7 /* Feed.strings */,
-				47E0E67E247FD14000034C56 /* Localized.swift */,
 			);
 			path = "Feed Presentation";
 			sourceTree = "<group>";
@@ -1258,7 +1255,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				082072D423226B5700759471 /* FeedLoader.swift in Sources */,
-				47E0E67F247FD14000034C56 /* Localized.swift in Sources */,
 				082072D323226B5700759471 /* FeedImageDataLoader.swift in Sources */,
 				082072D223226B5700759471 /* FeedImage.swift in Sources */,
 			);
