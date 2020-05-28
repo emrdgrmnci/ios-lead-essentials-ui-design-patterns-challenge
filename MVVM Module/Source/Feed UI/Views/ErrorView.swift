@@ -5,10 +5,10 @@
 import UIKit
 
 public final class ErrorView: UIView {
-	@IBOutlet private var label: UILabel!
+	@IBOutlet private var errorLabel: UILabel!
 	
 	public var message: String? {
-		get { return isVisible ? label.text : nil }
+		get { return isVisible ? errorLabel.text : nil }
 	}
 	
 	private var isVisible: Bool {
@@ -18,12 +18,12 @@ public final class ErrorView: UIView {
 	public override func awakeFromNib() {
 		super.awakeFromNib()
 		
-		label.text = nil
+		errorLabel.text = nil
 		alpha = 0
 	}
 	
 	func show(message: String) {
-		self.label.text = message
+		self.errorLabel.text = message
 		
 		UIView.animate(withDuration: 0.25) {
 			self.alpha = 1
@@ -35,7 +35,7 @@ public final class ErrorView: UIView {
 			withDuration: 0.25,
 			animations: { self.alpha = 0 },
 			completion: { completed in
-				if completed { self.label.text = nil }
+				if completed { self.errorLabel.text = nil }
 		})
 	}
 }
